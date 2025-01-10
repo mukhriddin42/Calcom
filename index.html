@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" href="./images/favicon-32x32.png">
     <title>Cal.com</title>
 </head>
 <body>
+    <div id="loader-wrapper">
+        <div id="loader" class="loader">
+        </div>
+    </div>
     <!-- header -->
     <header>
         <div class="main-header container">
@@ -20,6 +25,8 @@
         </div>
     </header>
     <!-- /header -->
+
+    
 
     <!-- main section -->
     <main class="container">
@@ -52,7 +59,7 @@
                 </form>
             </div>
         </section>
-        <section class="meeting-schedule">
+        <section class="meeting-schedule" data-aos="fade-up">
             <h1 class="meetings-title">
                 Schedule meetings without the email tennis
             </h1>
@@ -68,7 +75,7 @@
                 Everything you need in a scheduling app
             </h1>
             <div class="cards-grid">
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>01</h3>
@@ -87,7 +94,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>02</h3>
@@ -106,7 +113,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>03</h3>
@@ -125,7 +132,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>04</h3>
@@ -144,7 +151,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>05</h3>
@@ -163,7 +170,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                     <div class="card-top-content">
                         <div class="card-number">
                             <h3>06</h3>
@@ -185,13 +192,13 @@
                 </div>
             </div>
             <div class="scheduling-bottom">
-                <marquee behavior="" direction="">
+                <p behavior="" direction="">
                     <h3>Pay to meet • Embed it anywhere • Opt-in bookings • Simple rescheduling • Hashed booking links</h3>
-                </marquee>
+                </p>
                 <span></span>
-                <marquee behavior="" direction="right">
+                <p behavior="" direction="right">
                     <h3>Pay to meet • Embed it anywhere • Opt-in bookings • Simple rescheduling • Hashed booking links</h3>
-                </marquee>
+                </p>
             </div>
         </section>
         <section class="fav-apps">
@@ -205,7 +212,7 @@
                 </p>
                 <button>Explore all apps<i class='bx bx-chevron-right'></i></button>
             </div>
-            <marquee behavior="alternate" direction="">
+            <div behavior="alternate" direction="">
                 <div class="fav-apps__content-line">
                     <div class="test-icon"><i class='bx bxl-typescript'></i></div>
                     <div class="test-icon"><i class='bx bxl-gmail'></i></div>
@@ -218,8 +225,8 @@
                     <div class="test-icon"><i class='bx bx-shape-square' ></i></div>
                     <div class="test-icon"><i class='bx bxs-graduation' ></i></div>
                 </div>
-            </marquee>
-            <marquee behavior="alternate" direction="right">
+            </div>
+            <div behavior="alternate" direction="right">
                 <div class="fav-apps__content-line">
                     <div class="test-icon"><i class='bx bxl-chrome' ></i></div>
                     <div class="test-icon"><i class='bx bxs-shopping-bag' ></i></div>
@@ -232,8 +239,8 @@
                     <div class="test-icon"><i class='bx bxs-file-find' ></i></div>
                     <div class="test-icon"><i class='bx bxs-blanket' ></i></div>
                 </div>
-            </marquee>
-            <marquee behavior="alternate" direction="">
+            </div>
+            <div behavior="alternate" direction="">
                 <div class="fav-apps__content-line">
                     <div class="test-icon"><i class='bx bxl-snapchat' ></i></div>
                     <div class="test-icon"><i class='bx bxl-dropbox' ></i></div>
@@ -246,8 +253,8 @@
                     <div class="test-icon"><i class='bx bxs-briefcase-alt-2' ></i></div>
                     <div class="test-icon"><i class='bx bx-message-square-edit' ></i></div>
                 </div>
-            </marquee>
-            <marquee behavior="alternate" direction="right">
+            </div>
+            <div behavior="alternate" direction="right">
                 <div class="fav-apps__content-line">
                     <div class="test-icon"><i class='bx bxl-graphql' ></i></div>
                     <div class="test-icon"><i class='bx bxl-reddit' ></i></div>
@@ -260,12 +267,11 @@
                     <div class="test-icon"><i class='bx bxs-hdd' ></i></div>
                     <div class="test-icon"><i class='bx bx-ruble' ></i></div>
                 </div>
-            </marquee>
+            </div>
         </section>
 
-        <section class="adapts">
+        <section class="adapts" data-aos="fade-right">
             <div class="adapts-bg">
-
             </div>
             <h2 class="adapts-title">
                 Scheduling that adapts to any business
@@ -340,7 +346,7 @@
                     Show more +
                 </h3>
                 <div class="card-column">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="50">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -364,7 +370,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="100">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -389,7 +395,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="150">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -415,7 +421,7 @@
                     </div>
                 </div>
                 <div class="card-column">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="50">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -437,7 +443,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="100">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -459,7 +465,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="150">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -485,7 +491,7 @@
                     </div>
                 </div>
                 <div class="card-column">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="50">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-3.png" alt="">
@@ -514,7 +520,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="100">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -536,7 +542,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="150">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -560,7 +566,7 @@
                     </div>
                 </div>
                 <div class="card-column">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="50">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -584,7 +590,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="100">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -606,7 +612,7 @@
                             <p><i class='bx bx-heart' ></i></p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="150">
                         <div class="card-top">
                             <div class="person-img">
                                 <img src="./images/img-1.png" alt="">
@@ -648,16 +654,16 @@
     <!-- /main section -->
     
     <!-- footer -->
-    <footer class="footer container">
+    <footer class="footer container" data-aos="fade-up">
         <div class="logos-box">
-            <a href="./index.html" class="header-logo">Cal.com</a>
-            <p>© 2022 Cal.com, Inc. support@cal.com</p>
-            <div class="logo-box">
+            <a href="./index.html" class="header-logo" data-aos="fade-up">Cal.com</a>
+            <p data-aos="fade-up" data-aos-duration="700">© 2022 Cal.com, Inc. support@cal.com</p>
+            <div class="logo-box" data-aos="fade-up" data-aos-duration="800">
                 <img src="./images/footer-logo-1.png" alt="">
                 <img src="./images/footer-logo-2.png" alt="">
                 <img src="./images/footer-logo-3.png" alt="">
             </div>
-            <div class="icon-box">
+            <div class="icon-box" data-aos="fade-up" data-aos-duration="900">
                 <i class='bx bxl-slack'></i>
                 <i class='bx bxl-twitter' ></i>
                 <i class='bx bxl-github' ></i>
@@ -665,63 +671,77 @@
         </div>
         <table>
             <tr>
-                <th>Solutions</th>
-                <th>Documentation</th>
-                <th>resources</th>
-                <th>Company</th>
+                <th data-aos="fade-up">Solutions</th>
+                <th data-aos="fade-up">Documentation</th>
+                <th data-aos="fade-up">resources</th>
+                <th data-aos="fade-up">Company</th>
             </tr>
             <tr>
-                <td>Self-hosted</td>
-                <td>Product</td>
-                <td>Blog</td>
-                <td>About</td>
+                <td data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">Self-hosted</td>
+                <td data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">Product</td>
+                <td data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">Blog</td>
+                <td data-aos="fade-up" data-aos-duration="700" data-aos-delay="50">About</td>
             </tr>
             <tr>
-                <td>SaaS Hosting</td>
-                <td>Developers</td>
-                <td>Merch Store</td>
-                <td>Privacy</td>
+                <td data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">SaaS Hosting</td>
+                <td data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Developers</td>
+                <td data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Merch Store</td>
+                <td data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">Privacy</td>
             </tr>
             <tr>
-                <td>Platform</td>
-                <td>Public API</td>
-                <td>Open Startup</td>
-                <td>Terms</td>
+                <td data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">Platform</td>
+                <td data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">Public API</td>
+                <td data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">Open Startup</td>
+                <td data-aos="fade-up" data-aos-duration="900" data-aos-delay="150">Terms</td>
             </tr>
             <tr>
-                <td>Desktop App</td>
-                <td>Docker</td>
-                <td>Embed</td>
-                <td>License</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>Developers</td>
-                <td>Security</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Desktop App</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Docker</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Embed</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">License</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>Routing Forms</td>
-                <td></td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Developers</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250">Security</td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>Workflows</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Routing Forms</td>
                 <td></td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
-                <td>App Store</td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350">Workflows</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">App Store</td>
                 <td></td>
             </tr>
         </table>
 
     </footer>
     <!-- /footer -->
+
+
+    <script>
+        window.addEventListener("load", function () {
+        const loader = document.getElementById("loader-wrapper");
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 2000);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

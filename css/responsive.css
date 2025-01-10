@@ -1,0 +1,59 @@
+@media only screen and (max-width:1024px) {
+    .container {
+        width: 950px;
+    }
+    .homepage-bottom-content .homepage-title {
+        font-size: 72px !important;
+    }
+    .homepage-form .input-box {
+        width: 700px !important;
+    }
+    button {
+        background-color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 16px !important;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+}
+
+
+/* 800px gacha */
+@media only screen and (max-width:800px) {
+    .container {
+        width: 720px;
+    }
+    .homepage-bottom-content .homepage-title {
+        font-size: 72px !important;
+    }
+    .homepage-form .input-box {
+        width: 450px !important;
+    }
+    button {
+        background-color: #fff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: 16px !important;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+    .testimonials-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        position: relative;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 10px;
+        margin: 30px auto 20px;
+    }
+    table {
+        display: none;
+    }
+    .booking .homepage-form .input-box {
+        width: 300px !important;
+    }
+}
